@@ -22,7 +22,11 @@ function exampleTwo(flag) {
   ie:
     checkBirthday(true) -> "It's you're birthday!"
 */
-
+function checkBirthday(happy){
+  if (happy) {
+    return ("It's you're birthday!");
+  }
+}
 
 /*
   Create a function named 'checkHoliday' with one parameter.
@@ -31,8 +35,16 @@ function exampleTwo(flag) {
   ie:
     checkHoliday(true) -> "It's time to go to school!"
 */
-
-
+function checkHoliday(holiday){
+  if (holiday) {
+    
+  }
+  else {
+    return ("It's time to go to school!");
+  }
+}
+ 
+ 
 /*
   Create a function named 'light' with one parameter.
   Name the parameter anything you want
@@ -41,7 +53,14 @@ function exampleTwo(flag) {
     light(true) -> "Turn light off"
     light(false) -> "Turn light on"
 */
-
+function light(candle){
+  if (candle) {
+    return ("Turn light off");
+  }
+  else {
+    return ("Turn light on");
+  }
+}
 
 /*
   Create a function named 'engine' with two parameters.
@@ -53,7 +72,14 @@ function exampleTwo(flag) {
     engine(false, true) -> "Shutdown"
     engine(false, false) -> "Shutdown"
 */
-
+function engine(bike, car){
+  if(bike && car){
+    return ("Rev up");
+  }
+  else {
+    return ("Shutdown");
+  }
+}
 
 /*
   Create a function named 'gradeScore' with one parameter.
@@ -65,7 +91,17 @@ function exampleTwo(flag) {
     gradeScore(81) -> "B"
     gradeScore(80) -> "C"
 */
-
+function gradeScore(result){
+  if (result > 90){
+    return ("A");
+  }
+  else if (result < 91 && result>=81){
+  return ("B");
+  }
+  else {
+    return ("C");
+  }
+}
 
 /*
   Create a function named 'imDone' with three parameters.
@@ -81,3 +117,17 @@ function exampleTwo(flag) {
     imDone(false, false, true) -> "no"
     imDone(false, false, false) -> "no"
 */
+function imDone (name, grade, school){
+  if (name && grade){
+    return ("yes");
+  }
+  if (grade && school){
+    return ("yes");
+  }
+  if (name && school){
+    return("yes");
+  }
+  else {
+    return("no");
+  }
+}
